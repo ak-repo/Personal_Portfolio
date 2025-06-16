@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal-Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="icon" href="images/favicon-32x32.png" />
+  </head>
+  <body>
+    <!-- nav and main  -->
+    <header>
+      <nav>
+        <h2>A<span>K</span></h2>
+        <ul id="side-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i
+            class="fa-solid fa-circle-xmark menu-icon"
+            style="color: #eaecf1"
+            onclick="closeMenu()"
+          ></i>
+        </ul>
+        <i
+          class="fa-solid fa-bars menu-icon"
+          style="color: #f0f0f0"
+          onclick="openMenu()"
+        ></i>
+      </nav>
+      <main>
+        <section class="main-1">
+          <h1>Hello, I'm <span class="highlight">Ananda Krishnan</span></h1>
+          <h2>A <span class="role">Full Stack Developer</span></h2>
+          <p>
+            I build robust and responsive web applications using
+            <strong>Python (Django)</strong> and
+            <strong>React.js</strong>.<br />
+            Passionate about clean code, elegant UI, and solving real-world
+            problems.
+          </p>
+        </section>
+        <section class="main-2">
+          <!-- Animation player -->
+          <div id="lottie-img">
+            <lottie-player
+              src="images/header/Main Scene.json"
+              background="transparent"
+              speed="1"
+              style="width: 500px; height: 500px"
+              loop
+              autoplay
+            >
+            </lottie-player>
+          </div>
+        </section>
+      </main>
+    </header>
+
+    <!-- about section  -->
+    <section id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about/profile.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="about-title">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Laudantium, est perferendis asperiores ut fugit fugiat esse optio
+            pariatur repellat quas iure inventore, quo saepe reiciendis quidem
+            molestiae dolorum sit itaque aspernatur? Eveniet repudiandae iure
+            odit omnis impedit veniam quasi iste! Veritatis, illum ipsa? Odit,
+            asperiores aut in voluptatem at soluta.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-category active-tab" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-category" onclick="opentab('experiance')">
+              Experiance
+            </p>
+          </div>
+          <div class="tab-contents active-content" id="skills">
+            <ul class="tab-skill-li">
+              <li>
+                <i class="devicon-html5-plain-wordmark"></i>
+              </li>
+              <li>
+                <i class="devicon-css3-plain-wordmark"></i>
+              </li>
+              <li>
+                <i class="devicon-python-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-javascript-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-git-plain-wordmark"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experiance">
+            <ul class="tab-experiance-li">
+              <li>Trainee at Bridgeon solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio  -->
+    <section id="portfolio">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/portfoilio/project1.png" alt="project-picture" />
+            <div class="layer">
+              <h3>Blog-app (Django)</h3>
+              <p>
+                A dynamic blogging platform built with Django, featuring user
+                authentication, post creation, comment management, responsive
+                interface.
+              </p>
+              <a href="https://github.com/ak-repo/AK_Blog" target="_blank"
+                ><i class="fa-brands fa-github" style="color: #0352fc"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/portfoilio/project3.png" alt="project-picture" />
+            <div class="layer">
+              <h3>ToDo-app (Django)</h3>
+              <p>
+                A simple yet powerful task management tool developed using
+                Django. It allows users to add, update, and delete tasks with a
+                clean UI and persistent storage.
+              </p>
+              <a href="https://github.com/ak-repo/todo-app" target="_blank"
+                ><i class="fa-brands fa-github" style="color: #0352fc"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/portfoilio/project2.png" alt="project-picture" />
+            <div class="layer">
+              <h3>Travel Website Clone (HTML & CSS)</h3>
+              <p>
+                A visually appealing front-end clone of a modern travel website,
+                crafted using only HTML and CSS.
+              </p>
+              <a href="#"
+                ><i class="fa-brands fa-github" style="color: #0352fc"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact   -->
+    <section id="contact">
+      <div class="contanier">
+        <div class="contact-row">
+          <div class="contact-left">
+            <!-- <lottie-player
+              src="images/contact/contact.json"
+              background="transparent"
+              speed="1"
+              style="width: 500px; height: 500px"
+              loop
+              autoplay
+            >
+            </lottie-player> -->
+            <img src="images/contact/contact.svg" alt="" />
+            <div class="contact-details">
+              <h2>Contact Me</h2>
+              <p>
+                <i class="fa-solid fa-envelope" style="color: #0352fc"></i>
+                tech.anandakrishnan@gmail.com
+              </p>
+              <p>
+                <i
+                  class="fa-brands fa-square-whatsapp"
+                  style="color: #0352fc"
+                ></i>
+                +0987654321
+              </p>
+              <div class="social-media">
+                <a
+                  href="https://www.linkedin.com/in/ananda-krishnan-13bb30366/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin" style="color: #0352fc"></i
+                ></a>
+                <a href="https://github.com/ak-repo" target="_blank"
+                  ><i class="fa-brands fa-github" style="color: #0352fc"></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fa-brands fa-square-instagram"
+                    style="color: #0352fc"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <label for="#fullname">Full Name</label>
+              <input type="text" placeholder="Your Name" id="fullname" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email-id"
+              />
+              <label for="message">message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your messages..."
+              ></textarea>
+              <button  onclick="sendMail(event)">Sent</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+      <hr />
+      <p>Copyright &copy; AK 2025 . All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "feRjvsxpzUxAQbVjq",
+        });
+      })();
+    </script>
+  </body>
+</html>
