@@ -238,7 +238,7 @@
                 id="message"
                 placeholder="Your messages..."
               ></textarea>
-              <button  onclick="sendMail(event)">Sent</button>
+              <button type="submit" onclick="sendMail(event)">Sent</button>
             </form>
           </div>
         </div>
@@ -251,13 +251,15 @@
       <p>Copyright &copy; AK 2025 . All rights reserved.</p>
     </footer>
 
+    <script src="js/main.js"></script>
+
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
-    <script src="js/main.js"></script>
+
     <script type="text/javascript">
       (function () {
         emailjs.init({
